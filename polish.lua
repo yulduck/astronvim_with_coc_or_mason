@@ -5,7 +5,7 @@ return function()
   vim.filetype.add {
     extension = {
       -- mdx = "mdx",
-   		-- mdx = 'markdown.mdx',
+      -- mdx = 'markdown.mdx',
       -- md = "markdown",
       -- mdx = 'astro-markdown',
       -- md = "astro-markdown",
@@ -15,9 +15,7 @@ return function()
   -- vim.treesitter
   -- .language
   -- .register ( "mdx", "markdown"  )
-  vim.treesitter
-  .language
-  .register ( "markdown", "mdx"   )
+  vim.treesitter.language.register("markdown", "mdx")
   --
   --     vim.treesitter.language.register("astro-markdown", "mdx")
   --     vim.treesitter.language.register("astro-markdown", "md")
@@ -36,4 +34,9 @@ return function()
   }
   --
   require "user.autocmds"
+  vim.filetype.add {
+    extension = {
+      astro = "astro",
+    },
+  }
 end

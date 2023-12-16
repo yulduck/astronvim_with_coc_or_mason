@@ -8,7 +8,12 @@ return {
       autotag = {
         enable = true,
         -- WARN: https://github.com/windwp/nvim-ts-autotag/issues/124 autocompletion bug
-        enable_close_on_slash = false,
+        enable_close_on_slash = true,
+      },
+      ensure_installed = { "astro", "tsx", "typescript", "html" },
+      auto_install = true,
+      highlight = {
+        enable = true,
       },
     })
   end,
