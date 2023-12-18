@@ -4,4 +4,5 @@
 -- return "tokyonight"
 -- return "catppuccin"
 -- return "astrotheme"
-return "astrodark"
+-- return "astrodark"
+return "catppuccin-mocha"
