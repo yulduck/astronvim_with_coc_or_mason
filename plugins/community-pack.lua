@@ -5,10 +5,10 @@ return {
   { import = "astrocommunity.pack.markdown" },
   -- { import = "astrocommunity.pack.thrift" },
   (vim.fn.executable "python" == 1 or vim.fn.executable "python3" == 1)
-      and {
-        import = "astrocommunity.pack.python-ruff",
-      }
-    or {},
+  and {
+    import = "astrocommunity.pack.python-ruff",
+  }
+  or {},
   -- vim.fn.executable "npm" == 1 and { import = "astrocommunity.pack.docker" } or {},
   -- vim.fn.executable "go" == 1 and { import = "astrocommunity.pack.go" } or {},
   -- vim.fn.executable "npm" == 1 and { import = "astrocommunity.pack.yaml" } or {},
@@ -17,7 +17,7 @@ return {
   -- vim.fn.executable "npm" == 1 and { import = "astrocommunity.pack.html-css" } or {},
   -- { import = "astrocommunity.pack.lua" },
   vim.fn.executable "rustc" == 1 and { import = "astrocommunity.pack.rust" } or {},
-  -- vim.fn.executable "protoc" == 1 and { import = "astrocommunity.pack.proto" } or {},
+  -- vim.fn.executable "protoc" == 1 and vim.fn.executable "go" == 1 and { import = "astrocommunity.pack.proto" } or {},
   {
     "linux-cultist/venv-selector.nvim",
     ft = "python",
