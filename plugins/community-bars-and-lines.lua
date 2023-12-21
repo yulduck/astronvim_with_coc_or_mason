@@ -1,5 +1,3 @@
 return {
-  -- { import = "astrocommunity.bars-and-lines.heirline-vscode-winbar" },
-  { import = "astrocommunity.bars-and-lines.dropbar-nvim" },
-  -- { import = "astrocommunity.bars-and-lines.dropbar-nvim" },
+  vim.fn.has "nvim-0.10" == 1 and { import = "astrocommunity.bars-and-lines.dropbar-nvim" } or {},
 }
