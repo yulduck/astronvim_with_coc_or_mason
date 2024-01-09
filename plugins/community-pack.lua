@@ -17,7 +17,6 @@ return {
   -- vim.fn.executable "npm" == 1 and { import = "astrocommunity.pack.html-css" } or {},
   -- { import = "astrocommunity.pack.lua" },
   vim.fn.executable "rustc" == 1 and { import = "astrocommunity.pack.rust" } or {},
-  -- vim.fn.executable "protoc" == 1 and vim.fn.executable "go" == 1 and { import = "astrocommunity.pack.proto" } or {},
   {
     "linux-cultist/venv-selector.nvim",
     ft = "python",
