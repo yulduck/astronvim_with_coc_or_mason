@@ -23,8 +23,6 @@ function M.mappings(maps)
   maps.v["K"] = { ":move '<-2<CR>gv-gv", desc = "Move line up", silent = true }
   maps.v["J"] = { ":move '>+1<CR>gv-gv", desc = "Move line down", silent = true }
 
-  maps.n["<C-a>"] = { "gg<S-v>G", desc = "Select all" }
-
   maps.i["<C-s>"] = { "<esc>:w<cr>a", desc = "Save file", silent = true }
 
   if is_available "nvim-dap-ui" then
@@ -160,7 +158,7 @@ function M.mappings(maps)
 
   if is_available "marks.nvim" then
     -- marks
-    maps.n["m"] = { desc = "Marks" }
+    maps.n["m"] = { desc = "󰈚 Marks" }
     maps.n["m,"] = { "<Plug>(Marks-setnext)<CR>", desc = "Set Next Lowercase Mark" }
     maps.n["m;"] = { "<Plug>(Marks-toggle)<CR>", desc = "Toggle Mark(Set Or Cancel Mark)" }
     maps.n["m]"] = { "<Plug>(Marks-next)<CR>", desc = "Move To Next Mark" }
